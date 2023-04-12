@@ -1,0 +1,573 @@
+
+
+
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+/* -----------------------header------------------- */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.logo{
+    left: 18px;
+    top: 18px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0em;
+}
+
+
+header::after{
+    content:"";
+    margin: 0px 100px;
+}
+
+
+header p{
+    font-size: 15px;
+    margin: 1% 0px;
+}
+
+header h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem;
+    margin: 0px auto;
+}
+
+header .title{
+   text-align: center;
+}
+
+header .social{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    align-items: center;
+    margin: 0px;
+    height: 50px;
+
+}
+
+.social p{
+    display: flex;
+    padding: 0px 5px;
+    align-items: center;
+}
+
+.social img{
+    width: 25px;
+}
+
+
+.up-nav{
+    background-color:black;
+    color: white;
+    padding: 1%;
+    margin: 2% 0px;
+    margin-bottom: 0px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.up-nav ul::after{
+    content: "";
+}
+.up-nav ul::before{
+    content: "";
+}
+
+
+.up-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.up-nav ul li{
+    display:inline;
+    font-size: large;
+    padding: 0.5% 1%;
+}
+
+.up-nav ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.up-nav ul li a:hover{
+    color: black;
+    transition:0.4s;
+}
+
+.up-nav ul li:hover{
+    background-color: white;
+    border-radius: 7px;
+    transition:0.4s;
+}
+
+
+
+/* ------------------------ Main --------------------------- */
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0%;
+    background-image: url(../images/background.jpg);
+    opacity: 80%;    
+}
+
+.wrapper section{
+    margin: 1em 5em;
+    background-color: rgba(255, 255, 255, 0.845);
+    padding: 2%;
+    margin: 3%;
+    min-height: 265px;
+    border-radius: 12px;
+}
+
+.wrapper section:nth-child(1){
+    flex-grow: 1;
+    flex-basis: 45%;
+}
+.wrapper section:nth-child(2){
+    flex-grow: 1;
+    padding:3%;
+}
+
+.wrapper section:nth-child(3){
+    flex-grow: 2;
+}
+
+
+/* ------------------ section 1 --------------------- */
+
+.welcome{
+    font-size: 21px;
+    padding: 5% 2%;
+}
+
+.welcome *{
+    padding: 1%;
+}
+
+
+/* --------------------- section 2 --------------------- */
+
+.contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact div{
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding:1%;
+    align-items: center;
+}
+
+.contact h3{
+    margin: 3% auto;
+    font-size: 31px;
+}
+
+.contact img{
+    width: 50px;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+.contact p{
+    font-size: 18px;
+}
+
+
+
+
+/* ------------------------- section 3 ----------------------- */
+
+.skills{
+    
+}
+
+.skills h2{
+    text-align: center;
+    margin: 4% auto;
+    font-size: 30px;
+}
+
+.skills div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.skills img{
+    width: 82px;
+    height: 82px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------footer------------------------- */
+
+footer{
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 1em auto;
+}
+
+
+
+footer form div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2em;
+}
+
+
+
+footer form .name-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 0px;
+}
+
+
+footer form input{
+    width: 60%;
+    height: 30px;
+}
+
+footer form textarea{
+    width: 65%;
+}
+
+footer form .group{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+footer form .group *{
+    margin: 0px 1em;
+}
+
+
+footer form div:nth-child(1){
+    flex-grow: 1;
+}
+
+footer form div:nth-child(2){
+    flex-grow: 1;
+}
+
+footer form div:nth-child(3){
+    flex-grow: 2;
+}
+
+footer form button{
+    color: white;
+    background-color: #0F9DA6;
+    padding: 2% 3%;
+    border-radius: 9px;
+}
+
+
+
+
+footer nav{
+    display: flex;
+    justify-content: center;
+}
+
+footer ul{
+    list-style: none;
+    width: 100%;
+}
+footer ul li{
+    text-align: center;
+    margin: 1%;   
+}
+footer li a{
+    color:white;
+    text-decoration: none;
+    margin: 1%;
+}
+footer li a:hover{
+    color:grey;
+    padding: 3%;
+}
+
+
+
+
+.active{
+    transition: 0.2s;
+    transform: rotate(90deg);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+   
+    header h1{
+
+    }
+
+    header .bar{
+        display: none;
+    }
+
+    header .social{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    header p{
+        min-width: 500px;
+        padding: 30px 0px;
+    }
+    
+    header::after{
+        content:"";
+        margin: 0px; 
+    }
+   
+    section:nth-child(1){
+        flex-grow: 1;
+   }
+   section:nth-child(2){
+        flex-grow: 1;
+   }
+   section:nth-child(3){
+        flex-grow: 1;
+   }
+
+
+   .up-nav ul{
+        display:none;
+        flex-direction: column;
+    }
+
+   .hamburger{
+        display: block;
+   }
+
+   
+
+   .contact img{
+    margin: 0px 10px;
+   }
+  }
+
+
+    footer form{
+        width: 100%;
+    }
+    footer form input{
+        width: 80%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+
+@media screen and (max-width: 480px) {
+    
+    header{
+        max-width: 480px;
+        padding-bottom: 50px;
+    }
+    
+    .logo{
+        left: 18px;
+        top: 18px;
+        width: 40%;
+        height: auto;
+        border-radius: 50%;
+        margin: 0em;
+    }
+    
+    .head *{
+        padding: 0%;
+        text-align: left;
+
+    }
+
+    header .title{
+        text-align: left;
+        padding: 5px 10px;
+    }
+    
+    header p{
+        min-width: 180px;
+        padding: 30px 0px;
+    }
+    
+
+    header::after{
+        content:"";
+        margin: 0px 0px;
+    }
+    
+    header h1{
+        text-align: left;
+        font-weight: 800;
+        font-size: 3rem;
+        padding: 1em;
+    }
+    
+    header .social{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px;
+        height: 50px;
+    
+    }
+    
+    .social p{
+        display: flex;
+        padding: 0px 5px;
+        align-items: center;
+    }
+    
+    .social img{
+        width: 25px;
+    }
+    header .bar{
+        display: none;
+    }
+
+
+    .skills div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .skills div img{
+        padding: 0px  ;
+        margin: 58px;
+    }
+
+
+
+    footer form .name-email{
+        margin: 1em 0px
+    }
+
+    footer form .name-email{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    footer form .group{
+        flex-wrap: wrap;
+    }
+
+    footer form input{
+        width: 100%;
+    }
+
+    footer form textarea{
+        width: 100%;
+    }
+
+    footer form button{
+        margin-top:14px;
+    }
+}
+
+
+
+
+
+
+/* ============================= Experience Page ================================= */
+
+.wrapper .work{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.wrapper .work .line{
+    border: 1px solid #002c4b;
+    height: 500px;
+    width: 0.1px
+}
+
+.jobs article{
+    border-bottom: 1px solid gray;
+    border-width: 70%;
+    max-width: 500px;
+}
+
+.jobs article .year{
+    font-size: 10px;
+    color: brown;
+    margin-bottom: 50px;
+}
